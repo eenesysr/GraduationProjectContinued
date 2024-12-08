@@ -1,21 +1,5 @@
 [
 	{
-		"file": "C:\\Unreal Engine\\GraduationProject\\Source\\GraduationProject\\DoorController.cpp",
-		"arguments": [
-			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Unreal Engine\\GraduationProject\\.vscode\\compileCommands_GraduationProject\\GraduationProject.1.rsp"
-		],
-		"directory": "D:\\UE_5.4\\Engine\\Source"
-	},
-	{
-		"file": "C:\\Unreal Engine\\GraduationProject\\Source\\GraduationProject\\DoorController.h",
-		"arguments": [
-			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Unreal Engine\\GraduationProject\\.vscode\\compileCommands_GraduationProject\\GraduationProject.1.rsp"
-		],
-		"directory": "D:\\UE_5.4\\Engine\\Source"
-	},
-	{
 		"file": "C:\\Unreal Engine\\GraduationProject\\Source\\GraduationProject\\GraduationProject.Build.cs",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe",
@@ -97,6 +81,22 @@
 	},
 	{
 		"file": "C:\\Unreal Engine\\GraduationProject\\Source\\GraduationProject\\GraduationProjectProjectile.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Engine\\GraduationProject\\.vscode\\compileCommands_GraduationProject\\GraduationProject.1.rsp"
+		],
+		"directory": "D:\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Engine\\GraduationProject\\Source\\GraduationProject\\HorizontalShot.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Engine\\GraduationProject\\.vscode\\compileCommands_GraduationProject\\GraduationProject.1.rsp"
+		],
+		"directory": "D:\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Engine\\GraduationProject\\Source\\GraduationProject\\HorizontalShot.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe",
 			"@C:\\Unreal Engine\\GraduationProject\\.vscode\\compileCommands_GraduationProject\\GraduationProject.1.rsp"
