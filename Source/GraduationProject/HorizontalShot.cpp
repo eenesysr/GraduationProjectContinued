@@ -24,9 +24,8 @@ void UHorizontalShot::BeginPlay()
 	float t = FMath::Sqrt((2 * h) / g);
 	float Distance = Vx * t;
 
- 	
-	FVector OriginalLocation = GetOwner()->GetActorLocation();
-		
+ 	OriginalLocation = GetOwner()->GetActorLocation();
+	
 }
 
 
@@ -40,19 +39,22 @@ void UHorizontalShot::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 	{
 		float t = FMath::Sqrt((2 * h) / g);
 		float Distance = Vx * t;
-
-		FVector CurrentLocation = GetOwner()->GetActorLocation();
-		FVector TargetLocation = CurrentLocation + FVector(Distance, 0, 0);
-		FVector NewLocation =  FMath::VInterpTo(CurrentLocation,TargetLocation,DeltaTime,Vx);
-		GetOwner()->SetActorLocation(NewLocation);
-		FString Result = FString::Printf(TEXT("Havada Kalma Süresi: %.2f saniye\nYatayda Alınan Mesafe: %.2f metre"), t, Distance);
-    	if (GEngine)
-    	{
-        GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, Result);
-    	}
-	
-		isStarting = false;
+		CurrentLocation = GetOwner()->GetActorLocation();
+		if(isActivee)
+		{
+			TargetLocation = CurrentLocation + FVector(Distance, 0, -40);
+			float Speed = (Vx / t) ;
+			NewLocation =  FMath::VInterpTo(CurrentLocation,TargetLocation,DeltaTime,Speed);
+			GetOwner()->SetActorLocation(NewLocation);
+			FString Result = FString::Printf(TEXT("Havada Kalma Süresi: %.2f saniye\nYatayda Alınan Mesafe: %.2f metre"), t, Distance);
+				if (GEngine)
+				{
+					GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, Result);
+				}
+			isActivee = false;
+		}
 		
+
 	}
 
 }

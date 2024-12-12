@@ -26,6 +26,18 @@ public:
 public:
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 	bool isStarting = false;
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	bool isActivee = true;
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	FVector NewLocation ;
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	FVector CurrentLocation ;
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	FVector TargetLocation ;
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	FVector OriginalLocation ;
+	
 private:
 
 	UPROPERTY(EditAnywhere)
